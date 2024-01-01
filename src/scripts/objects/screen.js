@@ -35,14 +35,13 @@ const screen = {
             <p style="display: inline;">Seguindo: ${user.seguindo}</p>
         </div>`;
 
-        // Filtrar e pegar os últimos 10 eventos de 'CreateEvent' ou 'PushEvent'
         const filteredEvents = user.events.filter(event =>
             event.type === 'CreateEvent' || event.type === 'PushEvent'
         ).slice(0, 10);
 
         if (filteredEvents.length > 0) {
             this.userProfile.innerHTML += `<div class="events section">
-                <h2>Últimos 10 Eventos</h2>
+                <h2>Events</h2>
                 <ul>
                     ${filteredEvents.map(event => `
                         <li>
