@@ -141,7 +141,17 @@ main {
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+
 }
+
+.container .profile-data .repositories ul li a strong{
+  border: 1px solid white;
+  background-color: #836fff;
+  color: white;
+  margin-top: 15px;
+}
+
+
 
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
@@ -192,4 +202,20 @@ main {
     width: 100%;
     padding: 0;
   }
+}
+
+.midia {
+  border: 1px solid gray;
+  border-radius: 7px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.events{
+  background-color: gray ;
+  margin-top:20px;  
+}
+.events li{
+  font-size: 14;
+  padding: 10px;
 }
