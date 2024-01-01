@@ -31,8 +31,8 @@ const screen = {
         }
 
         this.userProfile.innerHTML += `<div class="midia">
-            <p style="display: inline;">Seguidores: ${user.seguidores}</p>
-            <p style="display: inline;">Seguindo: ${user.seguindo}</p>
+            <p style="display: inline;">👨🏿‍🤝‍👨🏾 ${user.seguidores} following</p>
+            <p style="display: inline;"> ${user.seguindo}  followers </p>
         </div>`;
 
         const filteredEvents = user.events.filter(event =>
@@ -53,7 +53,10 @@ const screen = {
                     `).join('')}
                 </ul>
             </div>`;
+        }else{
+            this.userProfile.innerHTML += `<h2> Não existe eventos recentes </h2>`
         }
+        
     },
 
     renderNotFound() {
